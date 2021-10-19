@@ -3,12 +3,12 @@
 {% block content%}
 {% for item in adv %}
 <div class="card">
-  <div class="card-header">{{item.date}}</div>
-  <div class="card-body">
-    <h5 class="card-title">{{ item.title}}</h5>
-    <p class="card-text">{{ item.text}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+    <div class="card-header">{{item.date}}</div>
+    <div class="card-body">
+        <h5 class="card-title">{{ item.title}}</h5>
+        <p class="card-text">{{ item.text}}</p>
+        <a href="#" class="btn btn-primary">Подробнее</a>
+    </div>
 </div>
 {%endfor%}
 {% endblock %}

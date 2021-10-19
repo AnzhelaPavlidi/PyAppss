@@ -3,13 +3,13 @@
 {% block content%}
 {% for item in adv %}
 <div class="card">
-  <div class="card-header">
-    Featured
-  </div>
+  <div class="card-header">{{ adv.date}}</div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{ adv.title}}</h5>
+    <h5 class="card-title">{{ adv.phone}}</h5>
+    <h5 class="card-title">{{ adv.email}}</h5>
+    <p class="card-text">{{ adv.text}}</p>
+    <a href="#" class="btn btn-primary">Редактировать</a>
   </div>
 </div>
 {%endfor%}
