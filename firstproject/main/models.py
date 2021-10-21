@@ -22,3 +22,9 @@ class Advert(models.Model):
 
     def get_absolute_utl(self):
         return reverse('adv_list')
+
+    def get_UpdateUrl(self):
+        return reverse('adv_update', kwargs={'pk': self.pk})
+
+    def get_DeleteUrl(self):
+        return reverse('adv_delete', kwargs={'pk': self.pk})
