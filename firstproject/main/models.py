@@ -19,3 +19,6 @@ class Advert(models.Model):
 
     def get_detailUlr(self):
         return reverse('adv_detail', kwargs={'pk': self.pk})
+
+    def get_absolute_utl(self):
+        return reverse('adv_list')
