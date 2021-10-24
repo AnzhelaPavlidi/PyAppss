@@ -6,5 +6,11 @@ from .models import Advert, Photo
 admin.site.register(Advert)
 " Подключаем нашу модель Advert к админке"
 
-admin.site.register(Photo)
-" Подключаем нашу модель Photo к админке"
+
+@admin.register(Photo)
+class AdvertAdmin(admin.ModelAdmin):
+    search_fields = ['title']
+    list_filter = ('advert',)
+
+
+

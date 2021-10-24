@@ -18,6 +18,10 @@ class AdvertDetailView(generic.DetailView):
     context_object_name = 'adv'
 
 
+class AdvertForm(object):
+    pass
+
+
 class AdvertCreate(generic.CreateView):
     form_class = AdvertForm
     template_name = 'main/advertcreate.html'
